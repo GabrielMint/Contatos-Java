@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Agenda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="Estilo.css?version=3">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="login">
+            <h1>Bem vindo a agenda!</h1>
+            <p>Faça seu login!</p>
+            <div class="form-group">
+            <form action="LoginSessao.do" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" size="20"
+                       class="form-control" required="required"><br/>
+                <label for="senha">Senha:</label><br>
+                <input type="password" name="senha" size="20"
+                       class="form-control" required="required"><br/>
+                <input type="submit" class="btn" value="Entrar">
+            </form>
+            </div>
+        </div>
+        <form action="CadastroUsuario.jsp" id="cdusuar" method="POST">
+            <input type="submit" class="btn btn-link cdst" value="Cadastrar Usuario">
+        </form>
+        <div class="fixed">
+            <p>Desenvolvimento Web</p>
+            <p>Gabriel Augusto</p>
+            <p>2015102605</p>
+        </div>
+    </body>
+</html>

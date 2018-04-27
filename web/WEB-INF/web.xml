@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ManterContato</servlet-name>
+        <servlet-class>CLASSES.ManterContato</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginSessao</servlet-name>
+        <servlet-class>CLASSES.LoginSessao</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadastroLogin</servlet-name>
+        <servlet-class>CLASSES.CadastroLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManterContato</servlet-name>
+        <url-pattern>/ManterContato.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginSessao</servlet-name>
+        <url-pattern>/LoginSessao.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastroLogin</servlet-name>
+        <url-pattern>/CadastroLogin.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
